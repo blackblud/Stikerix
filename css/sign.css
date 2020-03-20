@@ -1,0 +1,302 @@
+@font-face {
+  src: url(font/Roboto-Black.ttf);
+  font-family: Roboto;
+}
+
+@font-face {
+  src: url(font/Roboto-Bold.ttf);
+  font-family: Roboto-Bold;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+*{
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+body{
+  background-color: #ffffff;
+  color: black;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  transition: 0.3s;
+}
+header {
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 115px;
+  height: 100px;
+  padding-left: 16px;
+  margin-top: -10px;
+}
+
+.navig{
+  padding-top: 30px;
+  float:right;
+}
+
+.navig_text{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  color: #777;
+  padding: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navig_text:hover{
+  color:black;
+}
+
+#sign_in{
+  padding-right: 16px;
+}
+
+.fa-angle-down{
+  padding-left: 10px;
+}
+
+.fa-sign-in-alt{
+  padding-left: 10px;
+
+}
+.fa-sign-in-alt:hover{
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+		transform: scale(1);
+	}
+
+	70% {
+		transform: scale(1.15);
+	}
+
+	100% {
+		transform: scale(1.05);
+  }
+}
+
+.social{
+  text-align: center;
+  height: 60px;
+}
+
+.btn{
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #262626;
+  margin: 8px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s linear;
+}
+
+.btn i{
+  line-height: 42px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}
+
+.btn:hover .fa-facebook{
+  color: #4267B2;
+}
+
+.btn:hover .fa-twitter{
+  color: #1DA1F2;
+}
+
+.btn:hover .fa-google{
+  color: #F4B400;
+}
+
+.btn:hover .fa-instagram{
+  color: #E1306C;
+}
+
+.btn:hover .fa-telegram{
+  color: #0088cc;
+}
+
+.footer_back{
+  width: 100%;
+  height: 60px;
+  bottom: 0%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #1F1F1F;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  color: black;
+}
+
+.back_panel_down{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  z-index: -1;
+  background-color: #1f1f1f;
+}
+.content{
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  min-height: calc(100vh - 140px);
+  display: flex;
+}
+
+.join_form{
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0 black;
+  width: 350px;
+  height: 100%;
+  padding: 25px;
+  margin: 8% auto;
+  background-color: #e8e8e8;
+}
+
+.join_form h1{
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.btn_login_x{
+  background-color: #c7c7c7;
+  width: 85%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 600px;
+  transition: 0.5s;
+}
+
+.btn_login_x:hover{
+  background-color: #1F1F1F;
+  color: white;
+}
+
+hr{
+  margin-top: 20px;
+  width: 80%;
+  border: 1px solid #c7c7c7;
+}
+
+.or{
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  width: 30px;
+  margin: -19px auto 10px;
+}
+
+.img_sign{
+  width: 70px;
+  margin-top: -60px;
+}
+
+.radio_sex{
+  transform: scale(1.5);
+}
+
+.radio_sex_text{
+  font-size: 20px;
+}
+
+#emaaail{
+  margin-bottom: 10px;
+}
+
+.forgot_pass{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#btn_theme{
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600px;
+  transition: 0.5s;
+}
+
+.btn_theme_light{
+  color: white;
+  background-color: #262626;
+}
+
+.btn_theme_dark{
+  color: #1f1f1f;
+  background-color: white;
+}
+
+.btn_theme_light:hover{
+  color: #1f1f1f;
+  background-color: white;
+}
+
+.btn_theme_dark:hover{
+  color: white;
+  background-color: #262626;
+}
+
+.input_box{
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.select_city{
+  font-size: 14px;
+  margin: 10px;
+  width: 125px;
+  text-align: center;
+
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  outline: none;
+
+}

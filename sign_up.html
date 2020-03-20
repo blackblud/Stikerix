@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>STIKERIX - Магазин Стікерів</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Stickers, Стікери, Stikerix, Наклейки">
+    <meta name="description" content="Замовте Свій Набір Стікерів Уже Сьогодні!">
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:450&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15a7651b37.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <button id="btn_theme" class="btn_theme_light" type="button" name="change_theme" onclick="changetheme ()"><i id="logo_theme" class="far fa-moon"></i></button>
+
+    <script type="text/javascript" src="js/script.js"></script>
+<div class="wrapper">
+  <header>
+        <a href="https://beemo.space"><img class="logo" src="img/favicon.png" alt="Logo"></a>
+        <div class="navig">
+          <a class="navig_text" href="/shop/" title="Каталог Стікерів">Каталог Стікерів<i class="fas fa-angle-down"></i></a>
+          <a class="navig_text" href="/shop/pack" title="Стікерпаки">Стікерпаки</a>
+          <a class="navig_text" href="/dostavka/" title="Доставка і Оплата">Доставка і Оплата</a>
+          <a class="navig_text" href="https://beemo.space#iabout" title="Про Нас">Про Нас</a>
+          <a class="navig_text" href="https://beemo.space#icontact" title="Контакти">Контакти</a>
+          <a class="navig_text" id="sign_in" href="sign_in.html" title="Вхід">Вхід / Реєстрація <i class="fas fa-sign-in-alt"></i></a>
+        </div>
+      </header>
+</div>
+<div class="wrapper">
+
+  <div class="content">
+    <div class="join_form">
+      <img class="img_sign" src="img/favicon.png" alt="Логотип">
+      <h1>Реєстрація</h1>
+      <form class="join" action="" method="post" onsubmit="f_login_up(this)">
+        <i class="fas fa-user"></i>
+        <input class="input_box" type="text" name="username" placeholder="Логін..."><br>
+        <i class="fas fa-key"></i>
+        <input class="input_box" type="password" name="pass" placeholder="Пароль..." pattern="[0-9a-fA-F]{6,}"><br>
+        <i class="fas fa-key"></i>
+        <input class="input_box" type="password" name="re_pass" placeholder="Повторіть Пароль..." pattern="[0-9a-fA-F]{6,}"><br>
+        <i class="fas fa-envelope"></i>
+        <input id="emaaail" class="input_box" type="email" name="email" placeholder="Email..."><br>
+
+        <input type="hidden" name="hidden_node">
+
+
+
+        <input class="radio_sex" type="radio" name="sex" id="male" value="male">
+        <label class="radio_sex_text" for="male"><i class="fas fa-male"></i> Чоловік</label>
+        <input class="radio_sex" type="radio" name="sex" id="female" value="female">
+        <label class="radio_sex_text" for="female"><i class="fas fa-female"></i> Жінка</label><br>
+
+
+
+
+        <i class="fas fa-city"></i>
+        <select class="select_city" name="city">
+          <option value="lviv">Львів</option>
+          <option value="kyiv">Київ</option>
+          <option value="kharkiv">Харків</option>
+          <option value="dnipro">Дніпро</option>
+          <option value="odesa">Одеса</option>
+        </select><br>
+        <textarea class="input_box" name="about" rows="5" cols="30" placeholder="Розкажіть про Себе..." maxlength="255"></textarea><br>
+
+        <input class="btn_login_x" type="submit" name="btn_login" value="Зареєструватись">
+      </form>
+    </div>
+  </div>
+
+</div>
+<div class="back_panel_down"></div>
+<div class="wrapper">
+    <div class="footer_back">
+      <div class="foot_text">
+        © Stikerix 1369 - 2020
+      </div>
+      <div class="social">
+        <a class="btn" href="https://www.facebook.com/">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="btn" href="https://twitter.com/">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="https://www.google.com/">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn" href="https://www.instagram.com/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="https://telegram.org/">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+      <div class="foot_rights">
+        All Rights Reserved
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

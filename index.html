@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>STIKERIX - Магазин Стікерів</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Stickers, Стікери, Stikerix, Наклейки">
+    <meta name="description" content="Замовте Свій Набір Стікерів Уже Сьогодні!">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:450&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15a7651b37.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+
+
+  <button id="btn_theme" class="btn_theme_light" type="button" name="change_theme" onclick="changetheme ()"><i id="logo_theme" class="far fa-moon"></i></button>
+
+<div class="wrapper">
+  <header>
+        <a href="https://beemo.space"><img class="logo" src="img/favicon.png" alt="Logo"></a>
+        <div class="navig">
+          <a class="navig_text" href="/shop/" title="Каталог Стікерів">Каталог Стікерів<i class="fas fa-angle-down"></i></a>
+          <a class="navig_text" href="/shop/pack" title="Стікерпаки">Стікерпаки</a>
+          <a class="navig_text" href="/dostavka/" title="Доставка і Оплата">Доставка і Оплата</a>
+          <a class="navig_text" href="#iabout" title="Про Нас">Про Нас</a>
+          <a class="navig_text" href="#icontact" title="Контакти">Контакти</a>
+          <a class="navig_text" id="sign_in" href="sign_in.html" title="Вхід">Вхід / Реєстрація <i class="fas fa-sign-in-alt"></i></a>
+        </div>
+      </header>
+</div>
+  <div class="back_panel"></div>
+<div class="wrapper">
+    <div class="panel">
+      <a id="panel_catalog" href="/shop/">Каталог Стікерів</a>
+      <img id="panel_img" src="img/stik.png" alt="Стікери">
+    </div>
+  <div class="table">
+    <div class="left">
+      <div class="up">
+        <div class="up_left">
+          <a id="p1" href="/shop/">
+            <div class="p1_left">
+                <h3 class="p1_text">Стікери</h3>
+            </div>
+            <div class="p1_right">
+              <img class="p1_img" src="img/stik_1.png" alt="Стікери">
+            </div>
+          </a>
+        </div>
+        <div class="up_right">
+          <a id="p2" href="/shop/pack">
+            <div class="p2_left">
+                <h3 class="p2_text">Стікерпаки</h3>
+            </div>
+            <div class="p2_right">
+              <img class="p2_img" src="img/stik_2.png" alt="Стікерпаки">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="down">
+        <a id="p3" href="/shop/kit">
+          <div class="p3_left">
+              <h3 class="p3_text">Стікербуки та Набори</h3>
+          </div>
+          <div class="p3_right">
+            <img class="p3_img" src="img/stik_3.png" alt="Стікербуки та Набори">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <a id="p4" href="/shop/big">
+        <div class="p4_up">
+          <img class="p4_img" src="img/stik_4.png" alt="Великі Стікери">
+        </div>
+        <div class="p4_down">
+          <h3 class="p4_text">Великі Наклейки</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <nav>
+    <a href="#iabout">
+      <div class="mouse">
+      <div class="wheel"> </div>
+      </div>
+    </a>
+  </nav>
+  <div class="about" id="iabout">
+    <div class="about_up">
+      <h3 class="about_up_text">Про Нас</h3>
+    </div>
+    <div class="about_middle">
+      <div class="mid_left">
+        <img class="about_logo" src="img/favicon.png" alt="Логотип">
+      </div>
+      <div class="mid_right">
+        <ul>
+          <li><h4>Хто Ви?</h4></li>
+            <p>Ми - компанія Stikerix. Компанія, яка займається виготовленням стікерів з 1369 року по всій Україні.</p>
+          <li><h4>Чому Саме Ви?</h4></li>
+            <p>Серед усіх конкурентів у нас самі кращі ціни та великий асортимент товарів.</p>
+          <li><h4>З Чого Виготовленні Ваші Стікери?</h4></li>
+            <p>Для нашої продукції ми використовуємо самоклеющийся матовий папір RITRAMA Litho 78 мкм.</p>
+          <li><h4>Як Мені Зробити Замовлення?</h4></li>
+            <p>Для замовлення виберіть інтересуючий вас набір стікерів та перейдіть у корзину. Далі виберіть Вид Доставки та оплатіть замовлення будь-яким зручним способом оплати.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="about_down">
+      <h3 class="about_up_text">Де Нас Можна Знайти?</h3>
+    </div>
+  </div>
+  <div id="map">
+    Тут Мала би Бути Карта...
+  </div>
+
+  <input type="button" value="Click on Me!" onclick="add_node()">
+  <input type="button" value="Cancel" onclick="delete_node()">
+  <div id="dom"></div>
+</div>
+
+<div class="back_panel_up"></div>
+
+
+
+<div class="wrapper">
+  <div class="footer">
+    <div class="contact" id="icontact">
+      <div class="contact_table">
+        <div class="c_element">
+          <div class="info">
+            <h2>Львів</h2>
+            <div class="price">
+              <span>ТРЦ "Victoria Gardens"</span>
+            </div>
+            <ul>
+              <li>Пн - Ср: 10:00 - 22:00</li>
+              <li>Чт - Пт: 10:00 - 19:00</li>
+              <li>Сб - Нд: Вихідний</li>
+              <li>тел. +38 (032) 259 02 02</li>
+            </ul>
+            <a href="https://www.google.com/maps/place/Victoria+Gardens/@49.8079519,23.9824708,16.25z/data=!4m5!3m4!1s0x0:0x46f72ce2040d60cf!8m2!3d49.8073675!4d23.9780393" target="_blank" >На Карті</a>
+          </div>
+        </div>
+        <div class="c_element">
+          <div class="info">
+            <h2>Київ</h2>
+            <div class="price">
+              <span>ТРЦ "Gulliver"</span>
+            </div>
+            <ul>
+              <li>Пн - Ср: 10:00 - 22:00</li>
+              <li>Чт - Пт: 10:00 - 00:00</li>
+              <li>Сб - Нд: Вихідний</li>
+              <li>тел. +38 (098) 555 55 09</li>
+            </ul>
+            <a href="https://www.google.com/maps/place/Gulliver/@50.438669,30.5212397,17z/data=!4m8!1m2!3m1!2sGulliver!3m4!1s0x40d4cefe0307e81f:0x1f234c3b0a0b492!8m2!3d50.4386655!4d30.5234286" target="_blank">На Карті</a>
+          </div>
+        </div>
+        <div class="c_element">
+          <div class="info">
+            <h2>Харків</h2>
+            <div class="price">
+              <span>ТРЦ "Ave - Plaza"</span>
+            </div>
+            <ul>
+              <li>Пн - Ср: 10:00 - 21:00</li>
+              <li>Чт - Пт: 10:00 - 22:00</li>
+              <li>Сб - Нд: Вихідний</li>
+              <li>тел. +38 (093) 155 55 05</li>
+            </ul>
+            <a href="https://www.google.com/maps/place/Ave+Plaza/@49.9944094,36.2308555,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0eff735c9f9:0x9e1b4d762a9b2ef1!8m2!3d49.994406!4d36.2330442" target="_blank" >На Карті</a>
+          </div>
+        </div>
+        <div class="c_element">
+          <div class="info">
+            <h2>Дніпро</h2>
+            <div class="price">
+              <span>ТРЦ "MOST - City"</span>
+            </div>
+            <ul>
+              <li>Пн - Ср: 10:00 - 22:00</li>
+              <li>Чт - Пт: 10:00 - 20:00</li>
+              <li>Сб - Нд: Вихідний</li>
+              <li>тел. +38 (050) 850 35 45</li>
+            </ul>
+            <a href="https://www.google.com/maps/place/MOST-City/@48.4616031,35.0374233,15z/data=!4m5!3m4!1s0x40dbe2c2c60241bd:0x999c964048051b3e!8m2!3d48.4660835!4d35.0506836" target="_blank" >На Карті</a>
+          </div>
+        </div>
+        <div class="c_element" class="invert">
+          <div class="info">
+            <h2>Одеса</h2>
+            <div class="price">
+              <span>ТРЦ "Fontan Sky Center"</span>
+            </div>
+            <ul>
+              <li>Пн - Ср: 10:00 - 22:00</li>
+              <li>Чт - Пт: 10:00 - 23:00</li>
+              <li>Сб - Нд: Вихідний</li>
+              <li>тел. +38 (098) 555 55 09</li>
+            </ul>
+            <a href="https://www.google.com/maps/place/Fontan+Sky+Center/@46.4616378,30.7419195,16.25z/data=!4m5!3m4!1s0x40c633d613f096dd:0x903e6da7cce4bbe9!8m2!3d46.4613471!4d30.7415834" target="_blank">На Карті</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="back_panel_down"></div>
+<div class="wrapper">
+    <div class="footer_back">
+      <div class="foot_text">
+        © Stikerix 1369 - 2020
+      </div>
+      <div class="social">
+        <a class="btn" href="https://www.facebook.com/">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="btn" href="https://twitter.com/">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="https://www.google.com/">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn" href="https://www.instagram.com/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="https://telegram.org/">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+      <div class="foot_rights">
+        All Rights Reserved
+      </div>
+    </div>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGOW2spUnj1JxJwNAxB2uqQ3jnQdmJP0c&callback=initMap"async defer></script>
+  </body>
+</html>
